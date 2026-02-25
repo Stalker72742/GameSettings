@@ -6,6 +6,7 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "GameSettingsHelper.generated.h"
 
+class UDefaultGameSettings;
 class UGameSettingsObject;
 /**
  * 
@@ -19,5 +20,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "GameSettings", meta=(WorldContext="WorldContextObject"))
 	static UGameSettingsObject* GetGameSettings(UObject* WorldContextObject);
 	
-
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameSettings", meta=(WorldContext="WorldContextObject"))
+	static UDefaultGameSettings* GetDefaultGameSettings(UObject* WorldContextObject);
 };

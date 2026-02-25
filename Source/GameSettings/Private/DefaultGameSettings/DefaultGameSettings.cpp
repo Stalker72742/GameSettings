@@ -61,7 +61,57 @@ void UDefaultGameSettings::SetResolution(const FIntPoint& InResolution)
 	ResolutionSizeY = InResolution.Y;
 }
 
-FIntPoint UDefaultGameSettings::GetResolution() const
+void UDefaultGameSettings::SetAntiAliasing(int32 InAntiAliasing)
 {
-	return FIntPoint(ResolutionSizeX, ResolutionSizeY);
+	AntiAliasingQuality = InAntiAliasing;
+}
+
+void UDefaultGameSettings::SetFoliageQuality(int32 InFoliageQuality)
+{
+	FoliageQuality = InFoliageQuality;
+}
+
+void UDefaultGameSettings::SetGlobalIlluminationQuality(int32 InGlobalIllumination)
+{
+	GlobalIlluminationQuality = InGlobalIllumination;
+}
+
+void UDefaultGameSettings::SetPostProcessingQuality(int32 InPostProcessing)
+{
+	PostProcessingQuality = InPostProcessing;
+}
+
+void UDefaultGameSettings::SetReflectionQuality(int32 InReflectionQuality)
+{
+	ReflectionQuality = InReflectionQuality;
+}
+
+void UDefaultGameSettings::SetShadingQuality(int32 InShadingQuality)
+{
+	ShadingQuality = InShadingQuality;
+}
+
+void UDefaultGameSettings::SetShadowQuality(int32 InShadowQuality)
+{
+	ShadowQuality = InShadowQuality;
+}
+
+void UDefaultGameSettings::SetTextureQuality(int32 InTextureQuality)
+{
+	TextureQuality = InTextureQuality;
+}
+
+void UDefaultGameSettings::SetViewDistanceQuality(int32 InViewDistance)
+{
+	ViewDistanceQuality = InViewDistance;
+}
+
+void UDefaultGameSettings::SetVisualEffectsQuality(int32 InVisualEffects)
+{
+	VisualEffectsQuality = InVisualEffects;
+}
+
+void UDefaultGameSettings::SetOverallScalabilityQuality(int32 InOverallScalability)
+{
+	OverallScalabilityQuality = InOverallScalability;
 }

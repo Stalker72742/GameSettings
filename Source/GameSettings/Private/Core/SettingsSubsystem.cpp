@@ -28,7 +28,6 @@ void USettingsSubsystem::Deinitialize()
 
 	if (Settings)
 	{
-		Settings->SaveSettings();
 		DestroySettings();
 	}
 }
