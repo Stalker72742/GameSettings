@@ -45,7 +45,6 @@ public class GameSettings : ModuleRules
 			}
 			);
 		
-		
 		DynamicallyLoadedModuleNames.AddRange(
 			new string[]
 			{
